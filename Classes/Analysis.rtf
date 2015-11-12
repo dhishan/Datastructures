@@ -1,0 +1,21 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1347\cocoasubrtf570
+{\fonttbl\f0\fnil\fcharset0 Cambria;\f1\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sa240
+
+\f0\fs32 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Analyze the best-case and worst-case running time of insertAccount() and removeAccount() methods of AccountStore class. Give your answer in Big-O notation and briefly explain. 
+\f1\fs24 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sa240
+
+\fs36 \cf2 insertAccount()\
+best-case: The best case would be when nothing is present in the array and the size is 0. Then the first available location will be filled. All loops will be skipped. Therefore the complexity is constant and in Big-O notation its O(1)\
+worst-case: If the entire array is traversed for either finding (if the number is highest) or while re-ordering(if the number is lowest) then the complexity would depend on the number of elements \'92n\'92(size of array) - linear time complexity - O(n)\
+\pard\pardeftab720\sa240
+\cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 removeAccount()\
+best-case: Very similar to the insertAccount() case the best case would be when only one element and it would not traverse through the array and hence a constant time- O(1)\
+worst-case:  The worst case would be if the entire array is traversed, i.e. in case of finding the position (if the number is the highest ) or while replacing (if the number is the lowest). Either case the array is traversed once completely and is dependent on the size of the array so the complexity O(n) }
